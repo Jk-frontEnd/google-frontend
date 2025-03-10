@@ -1,0 +1,82 @@
+:root {
+    --bg: #38373d;
+    --bg-form: #58575c;
+    --font: #ffffff;
+    --link-blue: #7eb2ff;
+}
+
+
+body,
+a,
+input {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font);
+}
+
+body {
+    background-color: var(--bg);
+}
+
+a {
+    color: var(--link-blue);
+}
+
+.container {
+    padding: 20px 8px;
+
+}
+
+.top-link-box {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+
+    gap: 20px;
+}
+
+.main-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.main-form {
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+    /* justify-content: center; */
+}
+
+.searchbar {
+    width: 400px;
+    height: 44px;
+    border-radius: 8px;
+    background-color: var(--bg-form);
+    padding: 4px 16px;
+    border: none;
+}
+
+.searchdiv {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 24px;
+    display: flex;
+}
+
+.lucky-btn {
+    width: fit-content;
+    margin: auto;
+}
