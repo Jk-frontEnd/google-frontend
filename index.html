@@ -14,30 +14,30 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="top-link-box">
-        <a href="./image-search.html">Google Image Search</a>
-        <a href="./advanced-search.html">Google Advanced Search</a>
-      </div>
-      <div class="main-box">
-        <h1 class="title">Google</h1>
-        <form class="main-form" action="https://www.google.com/search">
-          <div class="searchdiv">
-            <input class="searchbar" type="text" name="q" />
-            <input
-              class="s-btn btn btn-primary"
-              type="submit"
-              value="Google Search"
-            />
-          </div>
-          <input
-            class="btn btn-light lucky-btn"
-            name="btnI"
-            type="submit"
-            value="I'm Feeling Lucky"
-          />
-        </form>
-      </div>
+    <!-- <div class="container"> -->
+    <div class="top-link-box">
+      <a href="./image-search.html">Google Image Search</a>
+      <a href="./advanced-search.html">Google Advanced Search</a>
     </div>
+    <div class="main-box">
+      <h1 class="title">Google</h1>
+      <form class="main-form" action="https://www.google.com/search">
+        <div class="searchdiv">
+          <input class="searchbar form-control" type="text" name="q" />
+          <button class="s-btn btn btn-primary" type="submit">
+            <svg class="search-icon">
+              <use href="./img/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+        <input
+          class="btn btn-light lucky-btn"
+          name="btnI"
+          type="submit"
+          value="I'm Feeling Lucky"
+        />
+      </form>
+    </div>
+    <!-- </div> -->
   </body>
 </html>

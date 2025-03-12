@@ -23,15 +23,17 @@ a {
 
 .container {
     padding: 20px 8px;
-
 }
 
 .top-link-box {
     display: flex;
-    align-items: center;
+    align-items: end;
     justify-content: right;
+    flex-direction: column;
 
-    gap: 20px;
+    gap: 12px;
+    margin-top: 20px;
+    margin-right: 20px;
 }
 
 .main-box {
@@ -48,9 +50,15 @@ a {
 }
 
 .title {
-    font-size: 100px;
+    font-size: 64px;
     font-weight: 700;
     margin-bottom: 32px;
+}
+
+.search-icon {
+    fill: var(--font);
+    width: 24px;
+    height: 24px;
 }
 
 .main-form {
@@ -61,12 +69,17 @@ a {
 }
 
 .searchbar {
-    width: 400px;
-    height: 44px;
+    width: 240px;
     border-radius: 8px;
     background-color: var(--bg-form);
     padding: 4px 16px;
+    height: 38px;
     border: none;
+    margin: 0;
+}
+
+.btn {
+    font-size: 14px;
 }
 
 .searchdiv {
@@ -79,4 +92,36 @@ a {
 .lucky-btn {
     width: fit-content;
     margin: auto;
+}
+
+/* ? tablet */
+@media (min-width: 481px) and (max-width: 767px) {
+    .searchbar {
+        width: 400px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .top-link-box {
+        flex-direction: row;
+        gap: 12px;
+    }
+}
+
+/* ? desktop ? */
+@media (min-width: 760px) and (max-width: 1199px) {
+    .searchbar {
+        width: 400px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .top-link-box {
+        flex-direction: row;
+        gap: 20px;
+    }
 }
