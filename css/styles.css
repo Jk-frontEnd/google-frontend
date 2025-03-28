@@ -3,6 +3,7 @@
     --bg-form: #58575c;
     --font: #ffffff;
     --link-blue: #7eb2ff;
+    --dark-blue: #0d6efd;
 }
 
 
@@ -53,6 +54,16 @@ a {
     font-size: 64px;
     font-weight: 700;
     margin-bottom: 32px;
+}
+
+.img-title {
+    color: var(--dark-blue);
+    font-size: 16px;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    top: -44px;
+    right: -84px;
 }
 
 .search-icon {
@@ -110,6 +121,12 @@ a {
         flex-direction: row;
         gap: 12px;
     }
+
+    .img-title {
+        font-size: 18px;
+        top: -50px;
+        right: -120px;
+    }
 }
 
 /* ? desktop ? */
@@ -125,5 +142,11 @@ a {
     .top-link-box {
         flex-direction: row;
         gap: 20px;
+    }
+
+    .img-title {
+        font-size: 18px;
+        top: -50px;
+        right: -120px;
     }
 }

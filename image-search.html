@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google Image Search</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <div>
+      <div class="main-box">
+        <h1 class="title">Google</h1>
+        <h2 class="img-title">images</h2>
+        <form
+          class="main-form"
+          action="https://www.google.com/search"
+          method="get"
+        >
+          <div class="searchdiv">
+            <input class="searchbar" type="text" name="q" required />
+            <button
+              class="s-btn btn btn-primary"
+              type="submit"
+              name="tbm"
+              value="isch"
+            >
+              <svg class="search-icon">
+                <use href="./img/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </div>
+          <!-- <input
+            class="btn btn-light lucky-btn"
+            name="btnI"
+            type="submit"
+            value="Google Search"
+          /> -->
+          <button class="btn btn-light lucky-btn" type="submit">
+            Gogle Search
+          </button>
+          <input type="hidden" name="tbm" value="isch" />
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
