@@ -88,7 +88,29 @@ a {
     border: none;
     margin: 0;
     color: var(--font);
+}
 
+@media (min-width: 786px) {
+    .searchbar {
+        width: 560px;
+        height: 52px;
+    }
+
+    .search-icon {
+        fill: var(--font);
+        width: 32px;
+        height: 32px;
+    }
+
+    .title {
+        font-size: 100px;
+    }
+
+    .btn,
+    .lucky-btn,
+    .btn-light {
+        font-size: 18px;
+    }
 }
 
 .btn {
@@ -102,15 +124,33 @@ a {
     display: flex;
 }
 
+.advanced-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    margin: auto;
+    margin-top: 160px;
+}
+
 .lucky-btn {
     width: fit-content;
     margin: auto;
+}
+
+.label {
+    display: flex;
+    width: max-content;
+    justify-content: stretch;
 }
 
 /* ? tablet */
 @media (min-width: 481px) and (max-width: 767px) {
     .searchbar {
         width: 400px;
+    }
+
+    .advanced-form {
+        max-width: 600px;
     }
 
     .title {
@@ -127,6 +167,14 @@ a {
         top: -50px;
         right: -120px;
     }
+}
+
+.advanced-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 280px;
+    margin: auto;
+    margin-top: 160px;
 }
 
 /* ? desktop ? */
@@ -149,4 +197,11 @@ a {
         top: -50px;
         right: -120px;
     }
+}
+
+/* * Advanced Search Styling */
+.back-link {
+    position: absolute;
+    right: 24px;
+    top: 24px;
 }
